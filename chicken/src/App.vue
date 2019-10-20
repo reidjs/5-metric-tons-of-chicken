@@ -13,16 +13,16 @@
         Administration
       </p>
       <ul class="menu-list">
-        <li><a>Team Settings</a></li>
+        <li><a>Organization Settings</a></li>
         <li>
-          <a>Manage Your Team</a>
+          <a>Alert Settings</a>
           <ul>
             <li><a>Members</a></li>
             <li><a>Plugins</a></li>
             <li><a>Add a member</a></li>
           </ul>
         </li>
-        <li><a>Invitations</a></li>
+        <li><a>Tracking </a></li>
         <li><a>Cloud Storage Environment Settings</a></li>
         <li><a>Authentication</a></li>
       </ul>
@@ -84,5 +84,10 @@ export default {
 #app {
   display: flex;
   margin: 25px;
+}
+
+.menu {
+  margin-right: 20px;
+  width: 250px;
 }
 </style>

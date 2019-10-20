@@ -1,6 +1,18 @@
 <template>
-    <div>
-        <h1 class="title">EPCIS Events</h1>
+    <div class="container">
+        <!-- <h1 class="title">EPCIS Events</h1> -->
+        <section class="hero is-warning">
+            <div class="hero-body">
+                <div class="container">
+                <h1 class="title">
+                    EPCIS Events
+                </h1>
+                <h2 class="subtitle">
+                    List of EPCIS Events across all sensors
+                </h2>
+                </div>
+            </div>
+        </section>
         <ul id="example-1">
             <li v-for="item in items" :key="item.name">
                 <ListItem :item="item"/>
@@ -25,6 +37,7 @@ export default {
                 why: 'Shipping',
                 where: 'Frank\'s Farm, Salinas, California 91022',
                 gln: '0321011246530',
+                url: 'https://picsum.photos/id/235/200/200'
             }, {
                 what: '13 bushels Corn',
                 sscc: '103210112345672904',
@@ -32,6 +45,7 @@ export default {
                 why: 'Packaging',
                 where: 'Juan\'s Farm, Oxaca, Mexico',
                 gln: '0321011246530',
+                url: 'https://picsum.photos/id/135/100/100',
             },
             {
                 what: 'Specialty Hardware',
@@ -40,6 +54,7 @@ export default {
                 why: 'Aggregation',
                 where: 'National Aerospace Museum',
                 gln: '03088911246530',
+                url: 'https://picsum.photos/id/215/100/100'
             }]
         }
     }
@@ -48,8 +63,8 @@ export default {
 
 <style scoped>
 div {
-    width: 75%;
-    margin: 20px 0
+    /* width: 75%; */
+    /* margin: 20px 0 */
 }
 h3 {
     margin: 0;

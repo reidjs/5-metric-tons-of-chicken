@@ -7,7 +7,7 @@
                     Pallet Sensors
                 </h1>
                 <h2 class="subtitle">
-                    Connecting dynamic sensor data to EPCIS events 
+                    Manage your active gs1 sensors
                 </h2>
                 </div>
             </div>
@@ -42,12 +42,13 @@ export default {
 }
 </script>
 <style scoped>
-div {
-    width: 100%
+.container {
+    width: 800px;
 }
 ul {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    justify-content: center;
 }
 </style>
