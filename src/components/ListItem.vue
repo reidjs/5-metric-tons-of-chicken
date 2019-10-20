@@ -1,5 +1,6 @@
 <template>
     <div class="card">
+        <div class="overlay">
         <div class="card-content">
             <div class="media">
             <div class="media-left">
@@ -26,13 +27,21 @@
             </div>
             </div>
         </div>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: 'ListItem',
-    props: ['item']
+    props: ['item'],
+    mounted() {
+        console.log('this.item', this.item)
+        // if(this.item.load) {
+        //     const el = document.getElementById('overlay')
+        //     console.log('el.style', el.style)
+        // }
+    }
 }
 </script>
 
@@ -46,5 +55,9 @@ h3 {
 }
 .card {
     margin: 20px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
 }
 </style>

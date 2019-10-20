@@ -1,11 +1,15 @@
 <template>
     <div class="box">
         <div class="container">
-            <h1>NodeMCU EPS8893</h1>
+            <h1>NodeMCU ESP8266</h1>
             <h2>{{ item.name }}</h2>
             <div class="button-container">
                 <button :class="{button: true, 'is-success': !active, 'is-danger': active, 'is-small': true}" @click="toggle">{{ text }}</button>
                 <button class="button is-info is-small"><router-link to="/dashboard">View</router-link></button>
+            </div>
+            <div class="sscc">
+                <h3>Associated SSCC</h3>
+                <span>103219000345672904</span>
             </div>
             <ul>
                 <li v-for="sensor in sensors" :key="sensor.name">
@@ -59,7 +63,7 @@ export default {
 
 <style scoped>
 .box {
-    width: 200px;
+    width: 237px;
     height: 200px;
     display: flex;
     align-items: center;
@@ -68,11 +72,14 @@ export default {
     cursor: pointer;
     /* flex-direction: column; */
 }
+h1 {
+    text-align: center;
+}
 h2 {
     text-align: center;
 }
 .button-container {
-    margin: 20px 0 40px;
+    margin: 10px 0 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -89,6 +96,22 @@ ul {
 }
 li {
     padding: 0 3px;
+}
+.sscc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3 {
+    text-align: center;
+}
+.sscc > span {
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sscc > span:hover {
+    color: green;
 }
 
 </style>
