@@ -5,6 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAa1rYoaYM0HlAXWumbGE6eMNuAZLJPq2s",
+        authDomain: "metrictonsofchicken.firebaseapp.com",
+        databaseURL: "https://metrictonsofchicken.firebaseio.com",
+        projectId: "metrictonsofchicken",
+        storageBucket: "metrictonsofchicken.appspot.com",
+        messagingSenderId: "681368420280",
+        appId: "1:681368420280:web:5d81cf2977adaab997594d"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      console.log('firebase', firebase)
+      var database = firebase.database();
+      console.log('firebaseConfig', firebase.database().ref())
+
+    </script>
     <title>chicken</title>
   </head>
   <body>
