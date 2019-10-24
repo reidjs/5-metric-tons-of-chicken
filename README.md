@@ -1,4 +1,7 @@
-Live
+:moneybag:*MOST INNOVATIVE PROJECT AT THE GS-1 TRACE-A-THON ($1000 Prize)*:moneybag:
+
+
+# Live
 https://metric-tons-of-chicken.herokuapp.com/#/
 
 # chicken
